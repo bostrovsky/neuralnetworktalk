@@ -1682,7 +1682,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1> Benefits of Using Artificial Neural Networks </h1>
 
-<p>Neural Networks are a class of algorithm that attempt to remedy the principle gaps between computational and biological systems. There is no such thing as &quot;a neural network&quot;, rather the term describes a class of models with different implementations, one of the most simple of which- the perceptron- we&#39;ll be covering later in this talk. The major benefits the use of neural networks afford computer programmers and mathematicians are their self-organization and learning capability, capability to generalize from relatively small data sets, and fault tolerance. </p>
+<p>Neural Networks are a class of algorithm that attempt to remedy the principal gaps between computational and biological systems. There is no such thing as &quot;a neural network&quot;, rather the term describes a class of models with different implementations, one of the most simple of which- the perceptron- we&#39;ll be covering later in this talk. The major benefits the use of neural networks afford computer programmers and mathematicians are their self-organization and learning capability, capability to generalize from relatively small data sets, and fault tolerance. </p>
 </div>
 </div>
 </div>
@@ -1693,11 +1693,11 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1> Robot Example </h1>
 
-<p>I think a regular question people have with these sorts of algorithms is what sort of problem space they are suited to. Let&#39;s assume you have a simple robot with three sensors on the front right, three on the front left and two on the back.</p>
-<p>Let&#39;s say we&#39;re always dealing with some real value as an input $\mathbb{I} \in \mathbb{R}$ to the sensor and make even simpler by further assuming that this signal is binary with H = 0 meaning everything is ok and H = 1 alerting the robot to stop. Now what we want to do is take these signals and make the robot move effectively, a problem that can be described mathematically as $\mathbb{f}$ : $\mathbb{R}^8 \in \mathbb{B}^1$, or to put it in human we want some function that applies the signals to a robot activity.</p>
-<p>Now, we can either go and get coffee and take a walk and try to think very hard of what the most effective way of solving the problem is and in a simple problem like this it&#39;s not a very difficult problem to solve. This is the classical AI approach emblematized with artificial intelligence sysems like Deep Blue. Rules of behaving were encoded and then more rules were generated for effectively searching through and selecting what components of some closed system like chess would be the most strategic thing to focus on.</p>
-<p>A more interesting way of solving this problem is creating some method for the robot to learn. Once again this example is extremely trivial, but a lot of things that we&#39;d be interesting in having aritfiically intelligent systems do are messy and ambiguous and constantly changing situations. You can&#39;t always come up with the rules in advance, and having a system that can come up with it&#39;s own most effective way of doing something is an enormous asset. </p>
-<p>Let&#39;s summarize exactly what we&#39;re going to do in this sort of scenario. We&#39;re going to take the robot and show it a variety of different situations and hopes that it learns to stop effectively. In this example what we&#39;re going to call a &quot;training sample&quot;  is a set of sensor values which we show to the robot and a set of actions we force it to perform. Thus more generally a training set can be understood to consist of a set of idealized inputs and a corresponding desired output. We call the inputs idealized because we want to emphasize the importance of choosing input data that&#39;s protototypical of what will be encountered. </p>
+<p>I think a regular question people have with these sorts of algorithms is what sort of problem space to which they are suited. Let&#39;s assume you have a simple robot with three sensors on the front right, three on the front left and two on the back.</p>
+<p>Furthermore, let&#39;s assume we&#39;re also dealing with some real value as an input $\mathbb{I} \in \mathbb{R}$ to the sensor and make even simpler by assuming that this signal is binary with H = 0 meaning everything is ok and H = 1 alerting the robot to stop. Now what we want to do is take these signals and make the robot move effectively; a problem that can be described mathematically as $\mathbb{f}$ : $\mathbb{R}^8 \in \mathbb{B}^1$, or to put it in human we want some function that applies the signals to a robot activity.</p>
+<p>Now, we can either go and get coffee and take a walk and try to think very hard of what the most effective way of solving the problem is and of course in a simple problem like this it would not be very difficult to solve. This is the classical AI approach emblematized with artificial intelligence sysems like Deep Blue. Rules of behaving were encoded and then more rules were generated for effectively searching through and selecting through these rules. While these approaches are beneficial when applied to closed systems like chess, it is difficult to use them in order to solve real world problems.</p>
+<p>A more interesting way of solving this problem is creating some method for the robot to learn. Once again this example is extremely trivial, but a lot of things that we&#39;d be interesting in having aritfiically intelligent systems do are messy and ambiguous and dynamic. You can&#39;t always come up with the rules in advance, and having a system that can come up with it&#39;s own most effective way of doing something is an enormous asset. </p>
+<p>Let&#39;s summarize exactly what we&#39;re going to do in this sort of scenario. We&#39;re going to take the robot and show it a variety of different situations and hopes that it learns to stop effectively. In this example what we&#39;re going to call a &quot;training sample&quot;  is a set of sensor values which we show to the robot and a set of actions we force it to perform. Thus more generally a training set can be understood to consist of a set of idealized inputs and a corresponding desired output. We call the inputs idealized because again ideally the training set would consist of data that emblematizes the whole range of data the system will encounter after training. </p>
 </div>
 </div>
 </div>
@@ -1708,14 +1708,14 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1> Brief History of Neural Networks </h1>
 
-<p>While a lot of people perceive neural networks as a relatively modern development, the construction of the first neural networks actually conincides with the invention of the first programmable computers in the 1940s. Two researchers, Warren McCulloch and Walter Pitts created models of neurological networks and demonstrated that even these simple models were able to compute elementary logic problems. While neural networks started as a sort of proof of concept of the then somewhat contentious neuron theory of the brain (i.e. that atomic units rather than a uniform and undifferentiated mass could be capable of producing what we perceive as a relatively organic or holistic or what have you perception of consciousness), any self-respecting neuroscientist today would bristle at the suggestion that neural networks rather cartoonish depiction of the complexity of the human brain would have the ability to generate insight into biological processes.</p>
+<p>While a lot of people perceive neural networks as a relatively modern development, the construction of the first neural networks actually conincides with the invention of the first programmable computers in the 1940s. Two researchers, Warren McCulloch and Walter Pitts created models of neurological networks and demonstrated that even these simple models were able to compute elementary logic problems. While neural networks started as a sort of proof of concept of the then somewhat contentious neuron theory of the brain (i.e. that atomic units rather than a uniform and undifferentiated mass could be capable of producing what we perceive as a relatively organic or holistic or what have you perception of consciousness), any self-respecting neuroscientist today would bristle at the suggestion that neural networks, a rather cartoonish depiction of the complexity of the human brain, would have the ability to generate insight into biological processes.</p>
 <p>After McCulloch and Pitts there was the neuroscientist Donald Hebb. If any of you have taken elementary courses in biology and neuroscience you&#39;ve probably heard the refrain that &quot;neurons that fire together wire together&quot;. Or the less cute version:</p>
 <blockquote>
 <p>&quot;The general idea is an old one, that any two cells or systems of cells that are repeatedly active at the same time will tend &gt;to become &#39;associated&#39;, so that activity in one facilitates activity in the other.&quot;- Donald Hebb</p>
 </blockquote>
 <p>This is an extremely important idea. In the same way Bernoulli and Maxwell introduced statistics to mechanics, and Darwin allowed for history in biology, Hebb&#39;s theory introduces the importance of probability in neurological reactions. As we&#39;ll see later this forms the theoretical backbone of neural networks.</p>
+<p>Hebb&#39;s theory of learning was found to have a biological basis by Eric Kandel&#39;s work in long-term potentiation. Kandel was able to demonstrate a physiological analogue to classical conditioning.</p>
 <p>Minsky went on to develop the first neural network that took advantage of Hebb&#39;s expansive theories on the neuron. The program, named SNARC didn&#39;t necessarily do anything but was capable of altering the weight of its connections.</p>
-<p>Those of you who have ever read a popular book on neuroscience have heard of the phenomenon of LTP or long term potentiation. This idea, borne out of Hebb&#39;s insights, desc</p>
 </div>
 </div>
 </div>
@@ -1728,7 +1728,9 @@ div#notebook {
 
 <p>This presentation is intended to provide a mathematical, biological, and computational overview of artificial neural networks.</p>
 <p>A neural network consists of neurons (vertices) and connections (edges). Each connection is through the course of running the algorithm assigned a weight.</p>
-<p>This is to say that a neural network is what computer scientists and mathematicians refer to as a graph.</p>
+<p>This is to say that a neural network is what computer scientists and mathematicians refer to as a graph. For the neural networks we&#39;re reviewing, the graph is a directed, weighted, acyclic graph. In fact, neural networks are actually instances of Bayesian networks which are partially defined as directed and acyclic graphs. </p>
+<p><h2> Weighted Graph </h2>
+<img src="images/weightedgraph.gif"></p>
 </div>
 </div>
 </div>
@@ -1743,12 +1745,12 @@ div#notebook {
 <p>A weight can be positive or negative in the same way that a neural connection can either be excitatory or inhibitory. In general, given any neuron j, there will be a number of neurons that transfer their output to j.</p>
 <p><h2> Propagation Function </h2>
 For this neuron j, we can formalize the above statement by saying that it is receiving the outputs $o_{i}....o_{n}$ from neurons $i_{1}, i_{2}....i_{n}$ and transforms them in regards to their weights $\omega_{i,j}$ into the net scalar value $net_{j}$</p>
-<p>Or let me take you back to calculus II and express this as some definitions and a weighted sum:</p>
-<p>Let I = $i_{1}, i_{2}...i_{n} \forall z \in {1...n}: \exists \omega_{i_{z},j}$</p>
-<p>$net_{j}$ = $\sum(o_{i}\omega_{i,j})$</p>
+<p>This can be expressed as a weighted sum:</p>
+<p>Let I = $i_{1}, i_{2}...i_{n} (\forall z \in {1...n}): \exists \omega_{i_{z},j}$</p>
+<p>$net_{j}$ = $\sum\limits_{i \in I}(o_{i}\omega_{i,j})$</p>
 <p><h2> Activation Function </h2>
 Any given neuron has some activation at any given time (t). This activation serves as a kind of &quot;switch&quot; that determines with the input of the $net_{j}$ whether or not the neuron will fire. Let&#39;s define the activation of a neuron j as $a_{j}$.</p>
-<p>Each neuron j has a threshold value $\Theta_{j}$ which marks the highest value a neuron has to reach before it fires. As long as $a_{j}$ is less than $\Theta_{j}$ the neuron will not fire. Now, the threshold is often defined globally but can be defined in relation to a <b> bias neuron </b> that always fires one. Doing it this way allows algorithms to represent neuron biases as connection weights which means that you can train the threshold at the same time as you&#39;re training the weights of the individiaul neurons.</p>
+<p>Each neuron j has a threshold value $\Theta_{j}$ which marks the highest value a neuron has to reach before it fires. As long as $a_{j}$ is less than $\Theta_{j}$ the neuron will not fire. Now, the threshold is often defined globally but can be defined in relation to a <b> bias neuron </b> that always fires 1. Doing it this way allows algorithms to represent neuron biases as connection weights which means that you can train the threshold at the same time as you&#39;re training the weights of the individiaul neurons.</p>
 <p>The Activation Function can be described as $$a_{j}(t) = f_{act}(net_{j}(t), a_{j}(t-1), \omega_{j})$$</p>
 <p>As you might have noticed, this is just a description of what the activation at time t is being equal to some activation function to which we pass three parameters, which as of yet doesn&#39;t help us a whole hell of a lot. These three parameters are
 the net activation at time t (which we got from the previous function), the activation at the previous time interval, and the maxium threshhold of neuron j.</p>
@@ -1792,9 +1794,9 @@ Finally, the third and last function we need to go over. This function takes the
 <h2> Feed-Forward versus Recurrent Neural Networks </h2>
 
 <p><b> Feed-Forward Neural Networks </b> allow signals to travel only one way from input to output, signals don&#39;t go backwards and the output of any layer doesn&#39;t affect the layer itself. 
-<b> Feedback Neural Networks </b> have signla straveling in both directions which introduce loops into the network. Computations derived from earlier input are fed back into the network which means that the state of the network changes which introduces a sort of &#39;memory&#39; (to get a little unduly poetic). They&#39;re dynamic and complicated and gradually converge to an equilibrium state which stays stable until the input changes. </p>
+<b> Feedback Neural Networks </b> have signla straveling in both directions which introduce loops into the network. Computations derived from earlier input are fed back into the network which means that the state of the network changes which introduces a sort of &#39;memory&#39;. They&#39;re dynamic and complicated and gradually converge to an equilibrium state which stays stable until the input changes. </p>
 <p>We&#39;re going to focus on feedforward networks in this talk for the following reasons:</p>
-<ul> I am only so intelligent </ul>
+<ul> Life is short and this talk is as well</ul>
 <ul> Multi-layered perceptrons, which are a type of feed-forward network are the most widely studied </ul>
 <ul> We&#39;re going to implement a simple perceptron which is a type of feed-forward network </ul>
 
@@ -1831,6 +1833,9 @@ Finally, the third and last function we need to go over. This function takes the
 <li> <b> reinforcement learning </b> network receives a logical or boolean value after execution which defines whether it was &quot;right&quot; or &quot;wrong&quot;, training set consists of input patterns with the addition that after completing a given sequence a value is returned indicating to the network whether it is &quot;right&quot; or &quot;wrong&quot; and sometimes How right or wron it was </li>
 <li> <b> supervised learning </b> the training set consists of input patterns as well as their correct results in the form of the precise activation of the output layer. This gives us the benefit of being able to directly compare the output with the actual results and further enables us to compute an error vector. </li>
 </ul>
+
+<p><h2>Online Versus Offline Learning </h2>
+Offline learning is learning where a set of patterns are presented and then the weights are changed. Online learning implies that weights are changed after every pattern presented. This primarily changes the way we calculate error (an individual difference or a sum of differences). </p>
 </div>
 </div>
 </div>
@@ -1849,19 +1854,19 @@ Finally, the third and last function we need to go over. This function takes the
 </ul>
 
 
-<p>So we&#39;re delivering input in batches and consistently comparing the teaching output to the ideal output. This is a little confusing but lets stick to formal definitions and define the teaching output as the teaching <b> input </b> $t_{j}$ compared to the true output $o_{j}$, with $t_{j}$ forming the correct output of a training pattern, which consists of the component vector $p_{1}, p_{2}...p_{n}$ whose desired output is known. The set of training patterns P consists of the ordered pairs (p, t) or the training patterns with their output. </p>
+<p>So we&#39;re delivering input in batches and consistently comparing the teaching output to the ideal output. This is a little confusing but lets stick to formal definitions and define the teaching output as the teaching <b> input </b> $t_{j}$ compared to the true output $y_{j}$, with $t_{j}$ forming the correct output of a training pattern, which consists of the component vector $p_{1}, p_{2}...p_{n}$ whose desired output is known. The set of training patterns P consists of the ordered pairs (p, t) or the training patterns with their output. </p>
 <p>We can form an error vector $E_{p}$ which consists of </p>
 <p>$$E_{p} =  \left( \begin{array}{ccc}
 t_{1}-y_{1}\\
 ...\\
 t_{n}-y_{n} \\ \end{array} \right) $$</p>
-<p>Where the error scalar can be derived:
-$Err_{p} = 1/2(\sum(t_\Omega - y_\Omega)^2$ with $\Omega$ being output neurons.</p>
-<p>and I never, ever want to type that in Latex again. This might look a little scary, but it&#39;s just the differences between the teaching inputs (which are outputs of that particular training pattern) and the actual output.</p>
+<p>or the error of set of training patterns </p>
+<p>Where the total error can be derived with $\Omega$ each output neuron in total set of outputs O:
+$$Err_{p} = 1/2(\sum\limits_{\Omega \in O}(t_{\Omega} - y_{\Omega})^2$$ </p>
+<p>This might look a little scary, but it&#39;s just the differences between the teaching inputs (which are outputs of that particular training pattern) and the actual output.</p>
 <p>Now for a brief break from the theoretical. You generally want to divide the training set into one set to use for the actual training and then a verification set to test our progress. Let&#39;s say 60/40 with 60% of the data being put into the training set. </p>
 <p>How do you know you&#39;re done?</p>
 <p>When the error value eventually converges. Note: this process is always a little bit arbitrary and can be expressed with confidence intervals and detected with the shape of the graph.</p>
-<h6 id="-add-stuff-about-gradient-descent-and-back-propagation-of-error">#add stuff about gradient descent and back-propagation of error</h6>
 </div>
 </div>
 </div>
@@ -1915,7 +1920,12 @@ $Err_{p} = 1/2(\sum(t_\Omega - y_\Omega)^2$ with $\Omega$ being output neurons.<
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It turns out the integral of a normal distribution is a sigmoid function and thus the derivative of Fermi&#39;s function is a nice bell shape. </p>
+<p>It turns out the integral of a normal distribution is a sigmoid function and thus the derivative of Fermi&#39;s function is a nice bell shape. 
+Now, we have the derivative of the sigmoid function which lets us know the behavior of the function at any given point (in this case $a_{k}$). </p>
+<p>We&#39;re going to use the derivative to compute the error as follows: $$\delta_{k} = g^{'}(a_{k})(y_{k}-t_{k})$$</p>
+<p>then the change in weight or $\Delta w_{i,j}$ as a batch process is equivalent to
+$$\sum\limits_{n}\delta x_{i}$$
+(here we&#39;re assuming for the sake of simplicity that the learning rate is equal to 1)</p>
 </div>
 </div>
 </div>
@@ -1927,7 +1937,7 @@ $Err_{p} = 1/2(\sum(t_\Omega - y_\Omega)^2$ with $\Omega$ being output neurons.<
 <p><h1> The Perceptron </h1>
 Now that we have a little bit more of a shared vocabulary, we can define the perceptron as a type of feed-forward neural network with short-cut connections. The input layer of a perceptron has constant weights, but all of the other layers can and must have connection weights that change. </p>
 <p>We&#39;re going to implement a binary perceptron, so all neurons in the perceptron have a possible value of {0,1} and that output in conjunction with a binary threshold acts as a sort of logic gate or if-clause (fire IF activation is 1). The input neuron is an identity neuron that exactly forwards the information received. The next layer or layers are the actual training layers with the three functions we covered above. Finally, we have the output layer which is just an identity function (and thus equivalent) to the output of the training layer. </p>
-<p>We&#39;re going to deal with a single-layer perceptron, which CAN but does not have to have multiple output neurons. If you want to sit back and light a joint you can ponder the fact that a perceptron with more than one output neuron is <b> actually </b> two different perceptrons with the same input.</p>
+<p>We&#39;re going to deal with a single-layer perceptron, which CAN but does not have to have multiple output neurons. </p>
 <p><h2> The Guarantee </h2>
 Now, the really cool thing about the Perceptron is that it comes with a guarantee. Namely, any problem that is <b> linearly seperable </b> is guaranteed to be solved (converge to a solution) in a finite amount of time! Take that one to the bank!</p>
 <p>Note: attuned readers will notice here the conditional statement regarding linear seperability which will turn out to be a <b> big </b> problem that severely limits the utility of the single-layer perceptron. </p>
@@ -1939,57 +1949,11 @@ Now, the really cool thing about the Perceptron is that it comes with a guarante
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1> Data Normalization </h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>p = [1, 2, 3, 4, 5, 6, 4, 3, 4, 5, 3, 4, 5, 4, 3, 4]</p>
-<pre><code>
-begining = 0
-end = 1
-datamin = min(p)
-datamax = max(p)
-</code></pre>
-
-<p>for i in range (0, size(p)):
-    p[i] = </p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1> PseudoCode for a Perceptron </h1>
-
-<p>this is copied from Kriesel&#39;s excellent introduction to neural networks with a coupel changes </p>
-<pre><code>
-while there's a training set in P and error is too big do
-    Input p into network, calculate output y
-    for all output neurons 
-        if that output neuron's output = training input
-            output is ok and no correction of weights is needed
-        else 
-            if that output neuron's output = 0 then
-                for all input neurons i do
-                     weight = weight + some offset
-                 end for 
-             end if
-             if that output neuron's output = 1 then
-                 for all input neurons i do
-                      weight = weight - some offset
-                 end for
-              end if
-          end if
-      end for
-end do
-</code></pre>
+<p><h1> Linear Seperability </h1>
+Linearly seperable vs. not linearly seperable data:
+<img src="images/linearseperability.jpg"></p>
+<p>The visual definition is simply whether or not you&#39;re able to draw a straight line that accurately divides the two classes of datapoints.</p>
+<p>The linearly separable data would be accurately sorted by a single layer perceptron. The linearly inseperable data would require a multilayer perceptron. Each layer would further separate the data until it was all classified accurately.</p>
 </div>
 </div>
 </div>
@@ -2005,7 +1969,7 @@ end do
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[36]:
+In&nbsp;[1]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2119,124 +2083,197 @@ In&nbsp;[36]:
 
 <div class="output_png output_subarea ">
 <img src="data:image/png;base64,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
-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
+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
+h5E90hpZ5gAAAABJRU5ErkJggg==
 "
 >
 </div>
@@ -2250,7 +2287,7 @@ BCMABAhGAAj8f4R2na7pOg3RAAAAAElFTkSuQmCC
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[37]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2259,10 +2296,6 @@ In&nbsp;[37]:
 
     <span class="n">BIAS</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    To view the structure of the Neural Network, type</span>
-<span class="sd">    print network_name</span>
-<span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">class</span> <span class="nc">Neuron</span><span class="p">:</span>
         <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_inputs</span> <span class="p">):</span>
@@ -2270,7 +2303,6 @@ In&nbsp;[37]:
             <span class="bp">self</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n_inputs</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="p">)</span> <span class="c"># +1 for bias weight</span>
 
         <span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span> <span class="p">):</span>
-            <span class="c"># Does not include the bias</span>
             <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">val</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">inputs</span><span class="p">))</span>
 
         <span class="k">def</span> <span class="nf">set_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">weights</span> <span class="p">):</span>
@@ -2294,10 +2326,10 @@ In&nbsp;[37]:
             <span class="bp">self</span><span class="o">.</span><span class="n">n_hidden_layers</span> <span class="o">=</span> <span class="n">n_hidden_layers</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">n_neurons_to_hl</span> <span class="o">=</span> <span class="n">n_neurons_to_hl</span>
 
-            <span class="c"># Do not touch</span>
+           
             <span class="bp">self</span><span class="o">.</span><span class="n">_create_network</span><span class="p">()</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_n_weights</span> <span class="o">=</span> <span class="bp">None</span>
-            <span class="c"># end</span>
+            
 
         <span class="k">def</span> <span class="nf">_create_network</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_hidden_layers</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
@@ -2361,32 +2393,9 @@ In&nbsp;[37]:
 
         <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
             <span class="k">return</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s">&#39; &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">layer</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layers</span><span class="p">)])</span>
-
-<span class="k">print</span> <span class="n">network_name</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_pyerr">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-37-ac0ef5e7003f&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">    107</span>         <span class="ansigreen">return</span> <span class="ansiblue">&apos;\n&apos;</span><span class="ansiblue">.</span>join<span class="ansiblue">(</span><span class="ansiblue">[</span>str<span class="ansiblue">(</span>i<span class="ansiblue">+</span><span class="ansicyan">1</span><span class="ansiblue">)</span><span class="ansiblue">+</span><span class="ansiblue">&apos; &apos;</span><span class="ansiblue">+</span>str<span class="ansiblue">(</span>layer<span class="ansiblue">)</span> <span class="ansigreen">for</span> i<span class="ansiblue">,</span>layer <span class="ansigreen">in</span> enumerate<span class="ansiblue">(</span>self<span class="ansiblue">.</span>layers<span class="ansiblue">)</span><span class="ansiblue">]</span><span class="ansiblue">)</span><span class="ansiblue"></span>
-<span class="ansigreen">    108</span> <span class="ansiblue"></span>
-<span class="ansigreen">--&gt; 109</span><span class="ansired"> </span><span class="ansigreen">print</span> network_name<span class="ansiblue"></span>
-
-<span class="ansired">NameError</span>: name &apos;network_name&apos; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -2394,7 +2403,7 @@ In&nbsp;[37]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2409,7 +2418,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2424,7 +2433,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2439,7 +2448,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2454,7 +2463,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2469,7 +2478,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2484,7 +2493,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2499,7 +2508,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2514,7 +2523,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2529,7 +2538,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2544,7 +2553,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2559,67 +2568,7 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
